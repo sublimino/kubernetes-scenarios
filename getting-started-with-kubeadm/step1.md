@@ -9,3 +9,9 @@ The command below will initialise the cluster with a known token to simplify the
 `kubeadm init --token=102952.1a7dd4cc8d1f4cc5`{{execute HOST1}}
 
 In production, it's recommend to exclude the token causing kubeadm to generate one on your behalf.
+
+## n.b.
+
+You may want to update to the latest patch release:
+
+`apt-get update && apt-get install -y kubelet kubeadm kubectl`{{execute HOST1}}
